@@ -16,7 +16,7 @@ import {
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = pgTableCreator((name) => `theo_${name}`);
+export const createTable = pgTableCreator((name) => `usthbclassroom_${name}`);
 
 export const publication = createTable(
   "publication",

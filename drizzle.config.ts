@@ -1,12 +1,16 @@
-import { type Config } from "drizzle-kit";
+import './src/server/envConfig.ts'; // Updated to use relative path
+import { defineConfig } from 'drizzle-kit';
 
-import { env } from "~/env";
-
-export default {
-  schema: "./src/server/db/schema.ts",
-  dialect: "postgresql",
+export default defineConfig({
+  schema: './src/server/db/schema.ts', // Ensure this path is also correct
+  dialect: 'postgresql',
   dbCredentials: {
-    url: env.DATABASE_URL,
+    url: process.env.POSTGRES_URL!,
   },
-  tablesFilter: ["usthbcassroom_*"],
-} satisfies Config;
+  tablesFilter: ['usthbclassroom*'],
+  out: './src/server/db/queries.ts', // Adjusted for relative path
+  migrations: {
+    table: "migrations",
+    schema: "public"
+  }
+});
