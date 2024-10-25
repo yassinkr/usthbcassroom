@@ -30,7 +30,7 @@ export default async function HomePage() {
     <main className="flex min-h-screen flex-col items-center justify-center  text-white">
      <SignedOut>
       <div className="w-full h-full text-2xl text-center">
-      sign in to seee the images
+      sign in to see the Publications
       </div>
      </SignedOut>
      <SignedIn>
