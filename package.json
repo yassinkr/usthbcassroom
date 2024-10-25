@@ -20,7 +20,7 @@
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-select": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
-    "@sentry/nextjs": "8",
+    "@sentry/nextjs": "^8.35.0",
     "@shadcn/ui": "^0.0.4",
     "@t3-oss/env-nextjs": "^0.10.1",
     "@uploadthing/react": "^6.6.0",
